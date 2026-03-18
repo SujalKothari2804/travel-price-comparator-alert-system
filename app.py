@@ -178,6 +178,12 @@ def run():
     result = run_analysis()
     return jsonify(result)
 
+from flask import send_file
+
+@app.route('/download', methods=['GET'])
+def download():
+    return send_file(OUTPUT_FILE, as_attachment=True)
+
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
