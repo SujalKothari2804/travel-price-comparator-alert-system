@@ -6,8 +6,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-INPUT_FILE  = 'FlixBus_Assignment.xlsx'
-OUTPUT_FILE = 'FlixBus_Flagging_Output.csv'
+INPUT_FILE  = 'Travel_Agency_Report.xlsx'
+OUTPUT_FILE = 'Price_Comparator_Flagging_Output.csv'
 THRESHOLD   = 0.15
 
 
